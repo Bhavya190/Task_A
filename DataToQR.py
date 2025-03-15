@@ -32,14 +32,14 @@ def get_qr_code(name,profile,profession,mobile_no,email,address,education,gender
 demo = gr.Interface(
     fn=get_qr_code,                                     # calling the get_qr_code function
     inputs = [                                          # 8 input fields(name,profile,profession,mobile_no,email,address,education,gender)
-            gr.Textbox(label='Name : ',placeholder='Enter Your Name'), 
-            gr.TextArea(label='Profile : ',placeholder='Introduction of yourself'), 
-            gr.Textbox(label='Profession : ',placeholder='Enter Your Proffesion'),
-            gr.Textbox(label='Mobile No : ',placeholder='Enter Your Mobile Number'),
-            gr.Textbox(label='E-mail : ',placeholder='Enter Your E-mail',type='email'),
-            gr.TextArea(label='Address : ',placeholder='Enter Your Address'),
-            gr.TextArea(label='Education : ',placeholder='Enter Your Eduction'),
-            gr.Radio(["Male","Female","Other"] ,label='Gender: ' ),
+            gr.Textbox(label='Name',placeholder='Enter Your Name'), 
+            gr.TextArea(label='Profile',placeholder='Introduction of yourself'), 
+            gr.Textbox(label='Profession',placeholder='Enter Your Proffesion'),
+            gr.Textbox(label='Mobile No',placeholder='Enter Your Mobile Number'),
+            gr.Textbox(label='E-mail',placeholder='Enter Your E-mail',type='email'),
+            gr.TextArea(label='Address',placeholder='Enter Your Address'),
+            gr.TextArea(label='Education',placeholder='Enter Your Eduction'),
+            gr.Radio(["Male","Female","Other"] ,label='Gender:' ),
         ],
     outputs=[
         gr.Textbox(label='Eroor Massage: ', interactive=False),
